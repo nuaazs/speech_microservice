@@ -13,66 +13,66 @@
 
 ## 使用方法
 
-1. 将`script.sh`脚本文件复制到你的项目目录中。
+1. 将`vaf_manager.sh`脚本文件复制到你的项目目录中。
 
 2. 打开终端，并导航到项目目录。
 
 3. 使用以下命令来操作微服务：
 
-   - 启动服务：`./script.sh start <service_name>` 或 `./script.sh start all`
+   - 启动服务：`./vaf_manager.sh start <service_name>` 或 `./vaf_manager.sh start all`
   
      例如，启动名为`asr_server`的微服务：
   
      ```
-     ./script.sh start asr_server
+     ./vaf_manager.sh start asr_server
      ```
   
      或者，启动所有微服务：
   
      ```
-     ./script.sh start all
+     ./vaf_manager.sh start all
      ```
 
-   - 停止服务：`./script.sh stop <service_name>` 或 `./script.sh stop all`
+   - 停止服务：`./vaf_manager.sh stop <service_name>` 或 `./vaf_manager.sh stop all`
   
      例如，停止名为`asr_server`的微服务：
   
      ```
-     ./script.sh stop asr_server
+     ./vaf_manager.sh stop asr_server
      ```
   
      或者，停止所有微服务：
   
      ```
-     ./script.sh stop all
+     ./vaf_manager.sh stop all
      ```
 
-   - 查看服务状态：`./script.sh status <service_name>` 或 `./script.sh status all`
+   - 查看服务状态：`./vaf_manager.sh status <service_name>` 或 `./vaf_manager.sh status all`
   
      例如，查看名为`asr_server`的微服务状态：
   
      ```
-     ./script.sh status asr_server
+     ./vaf_manager.sh status asr_server
      ```
   
      或者，查看所有微服务的状态：
   
      ```
-     ./script.sh status all
+     ./vaf_manager.sh status all
      ```
 
-   - 测试服务：`./script.sh test <service_name>` 或 `./script.sh test all`
+   - 测试服务：`./vaf_manager.sh test <service_name>` 或 `./vaf_manager.sh test all`
   
      例如，测试名为`asr_server`的微服务：
   
      ```
-     ./script.sh test asr_server
+     ./vaf_manager.sh test asr_server
      ```
   
      或者，测试所有微服务：
   
      ```
-     ./script.sh test all
+     ./vaf_manager.sh test all
      ```
 
 4. 根据需要选择合适的命令来管理和测试你的微服务。
@@ -121,7 +121,7 @@ declare -A workers=(
 - 请确保在运行脚本之前，使用`chmod`命令为脚本文件添加可执行权限：
 
   ```
-  chmod +x script.sh
+  chmod +x vaf_manager.sh
   ```
 
 - 在调用各个微服务之前，请确保每个微服务目录中都有一个名为"test_api.py"的测试脚本文件。
